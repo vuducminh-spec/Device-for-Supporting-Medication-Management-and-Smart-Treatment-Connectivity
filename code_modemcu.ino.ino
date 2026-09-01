@@ -1,8 +1,9 @@
 #include <ESP8266WiFi.h>
+#include "arduino_secrets.h"
 
-String writeAPIKey = "7W6T2QOMYPF6RHFQ";
-const char *ssid = "Xuong STEM";
-const char *password = "@xuongstem";
+String writeAPIKey = SECRET_APIKEY;
+const char *ssid = SECRET_SSID;
+const char *password = SECRET_PASS;
 const char* server = "api.thingspeak.com";
 int dem,c1,c2,c3;
 WiFiClient client;
